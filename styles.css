@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --font-family: "Young Serif", sans-serif;
+  --content-font-family: "Outfit", sans-serif;
+  --font-Weight-regular: 400;
+  --font-Weight-semi-bold: 600;
+  --font-Weight-bold: 700;
+
+  /* Colors */
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-orange: hsl(30, 54%, 90%);
+  --color-lighter-orange: hsl(30, 18%, 87%);
+  --color-Light-brown: hsl(30, 10%, 34%);
+  --color-Dark-brown: hsl(24, 5%, 18%);
+  --color-brown: hsl(14, 45%, 36%);
+  --color-rose: hsl(332, 51%, 32%);
+  --color-light-rose: hsl(330, 100%, 98%);
+
+  --font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-light-orange);
+  font-family: var(--content-font-family);
+}
+
+.main-heading {
+  color: var(--color-Dark-brown);
+  font-family: var(--font-family);
+  font-weight: var(--font-Weight-regular);
+  font-size: 1.8rem;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.heading-description {
+  font-size: calc(var(--font-size) / 1.25);
+  margin-bottom: 15px;
+}
+
+#bold {
+  font-weight: var(--font-Weight-bold);
+}
+
+#bold-data {
+  font-weight: var(--font-Weight-bold);
+  color: var(--color-brown);
+}
+
+.secondary-heading {
+  font-size: 1.3rem;
+  color: var(--color-brown);
+  font-family: var(--font-family);
+  font-weight: var(--font-Weight-regular);
+}
+
+hr {
+  width: 100%;
+  border: 1px solid var(--color-lighter-orange);
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.container {
+  max-height: 1440px;
+  max-width: 520px;
+  padding: 30px;
+  margin: 20px auto;
+  background-color: var(--color-white);
+  font-weight: var(--font-Weight-regular);
+  font-size: calc(var(--font-size) / 1.25);
+  border-radius: 10px;
+  color: var(--color-Light-brown);
+}
+
+.preparation-section {
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+.preparation-heading {
+  color: var(--color-rose);
+  font-weight: var(--font-Weight-bold);
+  font-size: var(--font-size);
+}
+
+.preparation-list {
+  background-color: var(--color-light-rose);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.ingredients-section {
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+.instructions-section {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+.nutrition-section {
+  margin-top: 15px;
+  padding: 5px;
+}
+
+li {
+  padding: 5px 0;
+}
+
+li::marker {
+  color: var(--color-rose);
+  font-size: 0.8rem;
+  word-spacing: 1rem;
+}
+
+ul,
+ol {
+  padding: 0px 20px;
+}
+
+table {
+  width: 375px;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid var(--color-lighter-orange);
+  border-width: 75%;
+}
+
+td {
+  padding: 10px 30px;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 100vw;
+    height: fit-content;
+    border-radius: 0;
+    margin: 0;
+    box-sizing: content-box;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
+}
